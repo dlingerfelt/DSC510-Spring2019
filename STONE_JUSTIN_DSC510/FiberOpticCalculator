@@ -1,0 +1,51 @@
+# FiberOpticCalculator.py
+# Name: Justin Stone
+# Date: 03/19/2019 Course: DSC510
+# Description: Calculate the
+# installation cost of fiber optic cable by
+# multiplying the total cost as the number
+# of feet times $0.87.
+# Usage: This program takes user inputs
+# and displays a potential total om a formatted receipt.
+
+
+# Global Variables
+# This will allow the price to be changed in one place
+linerFootInstalledPrice = 0.87
+
+# Welcome message and
+print("***********************************************************")
+print("***********************************************************")
+print("**        Welcome to Fiber Cost Fabricator 1.0           **")
+print("***********************************************************")
+print("***********************************************************")
+
+# User input variable assigned
+name = input("What is your the name of your organization or business?  ")
+
+# User input variable assigned
+# Converted the decimal variable to str so that print doesn't cry
+print("***********************************************************")
+print("The current rate is $" + str(linerFootInstalledPrice) + "/linear foot, installed.")
+print("***********************************************************")
+
+# Feet input needs to allow for decimals as our multiplier does.
+feet = float(input("How many feet of fiber optic cable is needed?  "))
+
+# Simple Math
+total = (feet * linerFootInstalledPrice)
+
+# Formattted Receipt output
+print("\n\n\n\n")
+print("***********************************************************")
+print("**         Fiber Cost Fabricator Receipt For:            **")
+print("***********************************************************")
+print("**   " + name)
+print("***********************************************************")
+print("**   Linear feet to be installed: " + str(feet))
+print("**   Cost per installed foot: $0.87")
+print("***********************************************************")
+print("**   Total: $" + str(total))
+print("***********************************************************")
+print("**   Thank you, " + name + ", for your business.")
+print("***********************************************************")
