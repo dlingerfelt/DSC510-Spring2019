@@ -5,8 +5,8 @@
 # installation cost of fiber optic cable by
 # multiplying the total cost as the number
 # of feet times $0.87.
-# Usage: This program takes user inputs
-# and displays a potential total om a formatted receipt.
+# Usage: This program takes user inputs and
+# displays a potential total om a formatted receipt.
 
 
 # Global Variables
