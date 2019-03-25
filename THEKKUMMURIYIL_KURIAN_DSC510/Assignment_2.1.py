@@ -14,7 +14,7 @@ import random
 receipt_number = random.randint(1001,999999)
 
 cost_per_feet = 0.87  # Cost of per feet of installation.
-tax = 7               # % of tax (
+tax = 7               # % of tax.
 name_of_our_company = 'Fiber Connections'
 our_company_address = 'xyz Street, Phoenix, AZ 85555'
 our_company_phone = '(440) 555 123'
@@ -41,7 +41,7 @@ while True:
     except ValueError:
         print('Not a valid input, Please enter a number')
 
-# calculates the cost of installation and rounds it to two decimal values
+# calculates the cost of installation ( No: of feet * cost_per_feet) and rounds it to two decimal values
 cost_of_installation = round(num_of_feet * cost_per_feet, 2)
 
 # calculates the tax by applying the tax % on calculated cost of installation.
@@ -53,7 +53,7 @@ calculated_tax = round(cost_of_installation*(tax/100), 2)
 # 3. Receipt issued for , with user's company name
 # 4. Prints a Receipt #, which is a random generated number.
 # 5. Length of the fiber optic installed
-# 6. Calculated cost of installation ( No: of feet * cost_per_feet ) with details of per foot charge.
+# 6. Calculated cost of installation with details of per foot charge.
 # 7. Tax for the calculated cost of Installation, based on the Tax %
 # 8. Total cost ( Tax + Cost of Installation)
 
